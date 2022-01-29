@@ -1,0 +1,6 @@
+*
+!*.cpp
+!*.txt
+!.replit
+!.gitignore
+
