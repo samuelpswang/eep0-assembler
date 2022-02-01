@@ -315,26 +315,17 @@ private:
 int main() {
     // Instructions
     cout << "Type your command in the following format:" << endl;
-    cout << "1. Assembly mnemonic line commands" << endl;
-    cout << "   ex. ADD R0, R1 | ADD R1, #34 | ADD R1 0x12 | ..." << endl;
-    cout << "   ex. STR R1, #100 | LDR R3, 0x56 | LDR R0, R1 | ..." << endl;
-    cout << "   ex. JMP #445 | JMI 0xAB | ..." << endl;
-    cout << "2. File input (reads from \"input.txt\" & writes to \"output.txt\")" << endl;
-    cout << "   ex. input -xd" << endl;
-    cout << "   ex. input -h" << endl;
-    cout << "3. Exit" << endl;
-    cout << "   ex. exit" << endl;
-    cout << "4. Flags (used to modify output): " << endl;
-    cout << "   -x: show don't care as \'X\' instead of \'0\'" << endl;
-    cout << "   -d: show Divider between sections of machine code" << endl;
-    cout << "   -h: show output in Hexadecimal instad of binary format" << endl;
-    cout << "**see readme.md for detailed explanation**" << endl;
+    cout << "1. Assembly mnemonic commands: ADD R0, R1" << endl;
+    cout << "2. File input (reads input.txt & writes output.txt): input -h" << endl;
+    cout << "4. Exit: exit" << endl;
+    cout << "3. Flags: -x (don't care), -d (divider), -h (hexadecimal)" << endl;
+    cout << "** SEE README.MD FOR DETAILS **" << endl;
 
     // Command Line
     string line;
     while ((cout << "> ") && (getline(cin, line))) {
         if (line == "exit") {
-            cout << "Program exited..." << endl;
+            cout << "Program exited!" << endl;
             return 0;
         }
         else if (line.substr(0, line.find(" ")) == "input") {
@@ -345,7 +336,7 @@ int main() {
                 if (tokens.size() > 1) flag = flag_parser(tokens[1]);
             }
             catch (...) {
-                cout << "Input Error: invalid arguments after \"input\" detected" << endl;
+                cout << "Input Error: invalid arguments after \"input\" detected" << endl << endl;
                 continue;
             }
 
@@ -353,7 +344,7 @@ int main() {
             ifstream ifs;
             ifs.open("input.txt");
             if (!ifs) {
-                cout << "File Not Found Error: \"input.txt\" does not exist" << endl;
+                cout << "File Not Found Error: input.txt does not exist" << endl << endl;
                 continue;
             }
 
@@ -375,16 +366,16 @@ int main() {
             }
 
             // Cleanup
-            cout << "Done: \"outpout.txt\" written" << endl;
+            cout << "Done: outpout.txt written" << endl << endl;
             ifs.close();
             ofs.close();
         }
         else {
             try {
-                cout << Assembly(line).assemble() << endl;
+                cout << Assembly(line).assemble() << endl << endl;
             }
             catch (...) {
-               cout << "Invalid Input: input is not valid assembly code" << endl;
+               cout << "Input Error: input is not valid assembly code" << endl << endl;
             }
         }
     }
