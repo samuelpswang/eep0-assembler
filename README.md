@@ -1,5 +1,8 @@
 # EEP0 Assembler
 
+[![Run on Repl.it](https://repl.it/badge/github/samuelpswang/eep0-assembler)](https://repl.it/github/samuelpswang/eep0-assembler)
+
+**^ 1) Click Replit badge. 2) Click RUN button in Replit.**
 
 ## Intro
 Assembler for 16-bit EEP0 CPU ([designed by Professer Clarke at Imperial EEE Department](https://www.imperial.ac.uk/people/t.clarke)) written by a lazy student during lab. 
