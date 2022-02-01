@@ -1,0 +1,4 @@
+ADD R3 #20
+MOV R3 R1
+JMI #34
+JMP R4 #23
