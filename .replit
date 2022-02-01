@@ -1,2 +1,2 @@
-language="c++"
-run="g++ -o assembler.exe main.cpp && ./assembler.exe"
+language = "c++"
+run = "g++ -o assembler.exe main.cpp && ./assembler.exe"
