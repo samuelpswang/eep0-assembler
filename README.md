@@ -5,7 +5,7 @@
 **TRY IT: 1) Click Replit badge; 2) Click RUN button in Replit.**
 
 ## Intro
-Assembler for 16-bit EEP0 CPU designed by ([Professer Clarke at Imperial EEE Department](https://www.imperial.ac.uk/people/t.clarke)).
+Assembler for 16-bit EEP0 CPU designed by [Professer Clarke at Imperial EEE Department](https://www.imperial.ac.uk/people/t.clarke).
 
 ## Command Line Interface
 ### Direct Instructions
