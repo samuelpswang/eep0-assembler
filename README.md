@@ -1,6 +1,7 @@
 # EEP0 Assembler
 
 [![Run on Repl.it](https://repl.it/badge/github/samuelpswang/eep0-assembler)](https://repl.it/github/samuelpswang/eep0-assembler)
+[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/samuelpswang/eep0-assembler/releases/)
 
 **^ 1) Click Replit badge. 2) Click RUN button in Replit.**
 
