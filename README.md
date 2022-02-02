@@ -1,12 +1,11 @@
 # EEP0 Assembler
 
 [![Run on Repl.it](https://repl.it/badge/github/samuelpswang/eep0-assembler)](https://repl.it/github/samuelpswang/eep0-assembler)
-[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/samuelpswang/eep0-assembler/releases/)
 
-**^ 1) Click Replit badge. 2) Click RUN button in Replit.**
+**TRY IT: 1) Click Replit badge; 2) Click RUN button in Replit.**
 
 ## Intro
-Assembler for 16-bit EEP0 CPU ([designed by Professer Clarke at Imperial EEE Department](https://www.imperial.ac.uk/people/t.clarke)) written by a lazy student during lab. Star it if you find it useful!
+Assembler for 16-bit EEP0 CPU designed by ([Professer Clarke at Imperial EEE Department](https://www.imperial.ac.uk/people/t.clarke)).
 
 ## Command Line Interface
 ### Direct Instructions
@@ -80,4 +79,4 @@ Input Error: invalid arguments after "input" detected
 
 ## Release
 * `Version: 1.0.0`
-* `Date: 2022/01/01`
+* `Date: 2022/02/01`
