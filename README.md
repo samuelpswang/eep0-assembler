@@ -78,5 +78,5 @@ Input Error: invalid arguments after "input" detected
 3. Compile & run `./main`. 
 
 ## Release
-* `Version: 1.0.0`
-* `Date: 2022/02/01`
+* `Version: 1.0.1`
+* `Date: 2022/02/03`
