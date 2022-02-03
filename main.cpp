@@ -385,55 +385,57 @@ int main() {
     // * Will write line number, binary commande, and assembly code.
     // * Run also if you need a match table.
 
-    // // Data Vectors
-    // vector<string> op_arth = {"MOV", "ADD", "SUB", "ADC"};
-    // vector<string> op_memy = {"LDR", "STR"};
-    // vector<string> op_jump = {"JMP", "JNE", "JCS", "JMI"};
-    // vector<string> reg = {"R0", "R1", "R2", "R3"};
+    /*
+    // Data Vectors
+    vector<string> op_arth = {"MOV", "ADD", "SUB", "ADC"};
+    vector<string> op_memy = {"LDR", "STR"};
+    vector<string> op_jump = {"JMP", "JNE", "JCS", "JMI"};
+    vector<string> reg = {"R0", "R1", "R2", "R3"};
     
-    // // Arithmetic Operations
-    // vector<string> all;
-    // string temp;
-    // for (int i = 0; i < op_arth.size(); i++) {
-    //     for (int j = 0; j < reg.size(); j++) {
-    //         for (int k = 0; k < reg.size(); k++) {
-    //             temp = op_arth[i] + " " + reg[j] + ", " + reg[k];
-    //             all.push_back(temp);
-    //         }
-    //         for (int k = 0; k < 256; k++) {
-    //             temp = op_arth[i] + " " + reg[j] + ", #" + to_string(k);
-    //             all.push_back(temp);
-    //         }
-    //     }
-    // }
-    // // Memory Operations
-    // for (int i = 0; i < op_memy.size(); i++) {
-    //     for (int j = 0; j < reg.size(); j++) {
-    //         for (int k = 0; k < reg.size(); k++) {
-    //             temp = op_memy[i] + " " + reg[j] + ", " + reg[k];
-    //             all.push_back(temp);
-    //         }
-    //         for (int k = 0; k < 256; k++) {
-    //             temp = op_memy[i] + " " + reg[j] + ", #" + to_string(k);
-    //             all.push_back(temp);
-    //         }
-    //     }
-    // }
-    // // Jump Operations
-    // for (int i = 0; i < op_jump.size(); i++) {
-    //     for (int j = 0; j < 256; j++) {
-    //         temp = op_jump[i] + " #" + to_string(j);
-    //         all.push_back(temp);
-    //     }
-    // }
+    // Arithmetic Operations
+    vector<string> all;
+    string temp;
+    for (int i = 0; i < op_arth.size(); i++) {
+        for (int j = 0; j < reg.size(); j++) {
+            for (int k = 0; k < reg.size(); k++) {
+                temp = op_arth[i] + " " + reg[j] + ", " + reg[k];
+                all.push_back(temp);
+            }
+            for (int k = 0; k < 256; k++) {
+                temp = op_arth[i] + " " + reg[j] + ", #" + to_string(k);
+                all.push_back(temp);
+            }
+        }
+    }
+    // Memory Operations
+    for (int i = 0; i < op_memy.size(); i++) {
+        for (int j = 0; j < reg.size(); j++) {
+            for (int k = 0; k < reg.size(); k++) {
+                temp = op_memy[i] + " " + reg[j] + ", " + reg[k];
+                all.push_back(temp);
+            }
+            for (int k = 0; k < 256; k++) {
+                temp = op_memy[i] + " " + reg[j] + ", #" + to_string(k);
+                all.push_back(temp);
+            }
+        }
+    }
+    // Jump Operations
+    for (int i = 0; i < op_jump.size(); i++) {
+        for (int j = 0; j < 256; j++) {
+            temp = op_jump[i] + " #" + to_string(j);
+            all.push_back(temp);
+        }
+    }
     
-    // // Write to file & Assemble
-    // ofstream ofs;
-    // ofs.open("possible_commands.txt");
-    // for (int i = 0; i < all.size(); i++) {
-    //     Assembly assem = Assembly(all[i]);
-    //     assem.set_flag("xd");
-    //     ofs << i << "\t" << assem.assemble() << "\t" << all[i] << endl;
-    // }
-    // ofs.close();
+    // Write to file & Assemble
+    ofstream ofs;
+    ofs.open("possible_commands.txt");
+    for (int i = 0; i < all.size(); i++) {
+        Assembly assem = Assembly(all[i]);
+        assem.set_flag("xd");
+        ofs << i << "\t" << assem.assemble() << "\t" << all[i] << endl;
+    }
+    ofs.close();
+    */
 }
